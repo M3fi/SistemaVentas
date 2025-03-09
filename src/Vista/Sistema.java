@@ -50,7 +50,7 @@ public class Sistema extends javax.swing.JFrame {
         txtPrecioTab1 = new javax.swing.JTextField();
         txtStockTab1 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tabla1 = new javax.swing.JTable();
         labelDniTab1 = new javax.swing.JLabel();
         labelNombreTab1 = new javax.swing.JLabel();
         txtNombreTab1 = new javax.swing.JTextField();
@@ -69,10 +69,63 @@ public class Sistema extends javax.swing.JFrame {
         txtTelefonoTab2 = new javax.swing.JTextField();
         txtDireccionTab2 = new javax.swing.JTextField();
         txtRazonTab2 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tabla2 = new javax.swing.JTable();
+        btnGuardarTab2 = new javax.swing.JButton();
+        btnEliminarTab2 = new javax.swing.JButton();
+        btnNuevoTab2 = new javax.swing.JButton();
+        btnActualizarTab2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        labelRucTab3 = new javax.swing.JLabel();
+        labelNombreTab3 = new javax.swing.JLabel();
+        labelTelefonoTab3 = new javax.swing.JLabel();
+        labelDireccionTab3 = new javax.swing.JLabel();
+        labelRazonTab3 = new javax.swing.JLabel();
+        txtRucTab3 = new javax.swing.JTextField();
+        txtNombreTab3 = new javax.swing.JTextField();
+        txtTelefonoTab3 = new javax.swing.JTextField();
+        txtDireccionTab3 = new javax.swing.JTextField();
+        txtRazonTab3 = new javax.swing.JTextField();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tabla3 = new javax.swing.JTable();
+        btnGuardarTab3 = new javax.swing.JButton();
+        btnEliminarTab3 = new javax.swing.JButton();
+        btnNuevoTab3 = new javax.swing.JButton();
+        btnActualizarTab3 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+        labelCodigoTab4 = new javax.swing.JLabel();
+        labelDescripcionTab4 = new javax.swing.JLabel();
+        labelCantidadTab4 = new javax.swing.JLabel();
+        labelPrecioTab4 = new javax.swing.JLabel();
+        labelProveedorTab4 = new javax.swing.JLabel();
+        txtCodigoTab4 = new javax.swing.JTextField();
+        txtDescripcionTab4 = new javax.swing.JTextField();
+        txtCantidadTab4 = new javax.swing.JTextField();
+        txtPrecioTab4 = new javax.swing.JTextField();
+        comboboxProveedorTab4 = new javax.swing.JComboBox<>();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        tabla4 = new javax.swing.JTable();
+        btnGuardarTab4 = new javax.swing.JButton();
+        btnEliminarTab4 = new javax.swing.JButton();
+        btnNuevoTab4 = new javax.swing.JButton();
+        btnActualizarTab4 = new javax.swing.JButton();
+        btnExcelTab4 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        tabla5 = new javax.swing.JTable();
+        btnPdfTab5 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
+        labelRucTab6 = new javax.swing.JLabel();
+        labelNombreTab6 = new javax.swing.JLabel();
+        labelTelefonoTab6 = new javax.swing.JLabel();
+        labelDireccionTab6 = new javax.swing.JLabel();
+        labelRazonTab6 = new javax.swing.JLabel();
+        txtRucTab6 = new javax.swing.JTextField();
+        txtNombreTab6 = new javax.swing.JTextField();
+        txtTelefonoTab6 = new javax.swing.JTextField();
+        txtDireccionTab6 = new javax.swing.JTextField();
+        txtRazonTab6 = new javax.swing.JTextField();
+        labelNombreTab7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(222, 222, 222));
@@ -82,21 +135,27 @@ public class Sistema extends javax.swing.JFrame {
 
         btnNuevaVenta.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnNuevaVenta.setText("Nueva Venta");
+        btnNuevaVenta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnClientes1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnClientes1.setText("Clientes");
+        btnClientes1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnProveedores1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnProveedores1.setText("Proveedores");
+        btnProveedores1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnProductos1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnProductos1.setText("Productos");
+        btnProductos1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnVentas1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnVentas1.setText("Ventas");
+        btnVentas1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnConfig1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
         btnConfig1.setText("Config");
+        btnConfig1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout panelOpcionesLayout = new javax.swing.GroupLayout(panelOpciones);
         panelOpciones.setLayout(panelOpcionesLayout);
@@ -155,7 +214,7 @@ public class Sistema extends javax.swing.JFrame {
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 780, 90));
+        getContentPane().add(panelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 780, 90));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -191,11 +250,16 @@ public class Sistema extends javax.swing.JFrame {
         txtPrecioTab1.setBackground(new java.awt.Color(255, 255, 255));
         txtPrecioTab1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
         txtPrecioTab1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        txtPrecioTab1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecioTab1ActionPerformed(evt);
+            }
+        });
 
         txtStockTab1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
         txtStockTab1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tabla1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -203,13 +267,13 @@ public class Sistema extends javax.swing.JFrame {
                 "CÓDIGO", "DESCRIPCIÓN", "CANTIDAD", "PRECIO", "TOTAL"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setPreferredWidth(30);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(2).setPreferredWidth(30);
-            jTable1.getColumnModel().getColumn(3).setPreferredWidth(30);
-            jTable1.getColumnModel().getColumn(4).setPreferredWidth(40);
+        jScrollPane1.setViewportView(tabla1);
+        if (tabla1.getColumnModel().getColumnCount() > 0) {
+            tabla1.getColumnModel().getColumn(0).setPreferredWidth(30);
+            tabla1.getColumnModel().getColumn(1).setPreferredWidth(100);
+            tabla1.getColumnModel().getColumn(2).setPreferredWidth(30);
+            tabla1.getColumnModel().getColumn(3).setPreferredWidth(30);
+            tabla1.getColumnModel().getColumn(4).setPreferredWidth(40);
         }
 
         labelDniTab1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
@@ -351,108 +415,535 @@ public class Sistema extends javax.swing.JFrame {
 
         txtRazonTab2.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
 
+        tabla2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "DNI/RUC", "NOMBRE", "TELÉFONO", "DIRECCIÓN", "RAZON SOCIAL"
+            }
+        ));
+        jScrollPane2.setViewportView(tabla2);
+        if (tabla2.getColumnModel().getColumnCount() > 0) {
+            tabla2.getColumnModel().getColumn(0).setPreferredWidth(50);
+            tabla2.getColumnModel().getColumn(1).setPreferredWidth(100);
+            tabla2.getColumnModel().getColumn(2).setPreferredWidth(50);
+            tabla2.getColumnModel().getColumn(3).setPreferredWidth(80);
+            tabla2.getColumnModel().getColumn(4).setPreferredWidth(80);
+        }
+
+        btnGuardarTab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GuardarTodo.png"))); // NOI18N
+        btnGuardarTab2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        btnEliminarTab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
+        btnEliminarTab2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        btnNuevoTab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
+        btnNuevoTab2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        btnActualizarTab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
+        btnActualizarTab2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labelDniTab6)
-                            .addComponent(labelDniTab5)
-                            .addComponent(labelDniTab4))
-                        .addGap(20, 20, 20)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtTelefonoTab2)
-                            .addComponent(txtDireccionTab2)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(labelDniTab2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelDniTab6, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelDniTab5, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelDniTab4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelDniTab3, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(txtDireccionTab2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                            .addComponent(txtTelefonoTab2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNombreTab2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtDniTab2, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtRazonTab2)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(labelDniTab3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtNombreTab2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(labelDniTab2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                        .addComponent(txtDniTab2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(328, 328, 328))
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnGuardarTab2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnNuevoTab2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(58, 58, 58)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnActualizarTab2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnEliminarTab2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelDniTab2)
-                    .addComponent(txtDniTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelDniTab3)
-                    .addComponent(txtNombreTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelDniTab4)
-                    .addComponent(txtTelefonoTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelDniTab5)
-                    .addComponent(txtDireccionTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelDniTab6)
-                    .addComponent(txtRazonTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDniTab2)
+                            .addComponent(txtDniTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDniTab3)
+                            .addComponent(txtNombreTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDniTab4)
+                            .addComponent(txtTelefonoTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDniTab5)
+                            .addComponent(txtDireccionTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDniTab6)
+                            .addComponent(txtRazonTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnGuardarTab2)
+                            .addComponent(btnEliminarTab2))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnNuevoTab2)
+                            .addComponent(btnActualizarTab2)))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab2", jPanel2);
+
+        labelRucTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelRucTab3.setText("RUC:");
+
+        labelNombreTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelNombreTab3.setText("NOMBRE:");
+
+        labelTelefonoTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelTelefonoTab3.setText("TELÉFONO:");
+
+        labelDireccionTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelDireccionTab3.setText("DIRECCIÓN:");
+
+        labelRazonTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelRazonTab3.setText("RAZON SOCIAL:");
+
+        txtRucTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtNombreTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtTelefonoTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        txtTelefonoTab3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoTab3ActionPerformed(evt);
+            }
+        });
+
+        txtDireccionTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtRazonTab3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        tabla3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "RUC", "NOMBRE", "TELÉFONO", "DIRECCIÓN", "RAZON SOCIAL"
+            }
+        ));
+        jScrollPane3.setViewportView(tabla3);
+        if (tabla3.getColumnModel().getColumnCount() > 0) {
+            tabla3.getColumnModel().getColumn(0).setPreferredWidth(40);
+            tabla3.getColumnModel().getColumn(1).setPreferredWidth(100);
+            tabla3.getColumnModel().getColumn(2).setPreferredWidth(50);
+            tabla3.getColumnModel().getColumn(3).setPreferredWidth(80);
+            tabla3.getColumnModel().getColumn(4).setPreferredWidth(70);
+        }
+
+        btnGuardarTab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GuardarTodo.png"))); // NOI18N
+
+        btnEliminarTab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
+
+        btnNuevoTab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
+
+        btnActualizarTab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 560, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnNuevoTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnGuardarTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(76, 76, 76)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnEliminarTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnActualizarTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelNombreTab3)
+                            .addComponent(labelRucTab3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtRucTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombreTab3))
+                        .addGap(9, 9, 9))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(labelRazonTab3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                                .addComponent(txtRazonTab3, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelTelefonoTab3)
+                                    .addComponent(labelDireccionTab3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtDireccionTab3)
+                                    .addComponent(txtTelefonoTab3))))
+                        .addGap(9, 9, 9)))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
+                .addGap(8, 8, 8))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelRucTab3)
+                    .addComponent(txtRucTab3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelNombreTab3)
+                    .addComponent(txtNombreTab3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelTelefonoTab3)
+                    .addComponent(txtTelefonoTab3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelDireccionTab3)
+                    .addComponent(txtDireccionTab3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelRazonTab3)
+                    .addComponent(txtRazonTab3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGuardarTab3)
+                    .addComponent(btnEliminarTab3))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNuevoTab3)
+                    .addComponent(btnActualizarTab3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", jPanel3);
+
+        labelCodigoTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelCodigoTab4.setText("Código:");
+
+        labelDescripcionTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelDescripcionTab4.setText("Descripción:");
+
+        labelCantidadTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelCantidadTab4.setText("Cantidad:");
+
+        labelPrecioTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelPrecioTab4.setText("Precio:");
+
+        labelProveedorTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelProveedorTab4.setText("Proveedor:");
+
+        txtCodigoTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtDescripcionTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtCantidadTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        txtCantidadTab4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCantidadTab4ActionPerformed(evt);
+            }
+        });
+
+        txtPrecioTab4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        comboboxProveedorTab4.setEditable(true);
+        comboboxProveedorTab4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboboxProveedorTab4ActionPerformed(evt);
+            }
+        });
+
+        tabla4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "CODIGO", "DESCRIPCIÓN", "STOCK", "PRECIO", "PROVEEDOR"
+            }
+        ));
+        jScrollPane4.setViewportView(tabla4);
+        if (tabla4.getColumnModel().getColumnCount() > 0) {
+            tabla4.getColumnModel().getColumn(0).setPreferredWidth(50);
+            tabla4.getColumnModel().getColumn(1).setPreferredWidth(100);
+            tabla4.getColumnModel().getColumn(2).setPreferredWidth(40);
+            tabla4.getColumnModel().getColumn(3).setPreferredWidth(50);
+            tabla4.getColumnModel().getColumn(4).setPreferredWidth(60);
+        }
+
+        btnGuardarTab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GuardarTodo.png"))); // NOI18N
+
+        btnEliminarTab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
+
+        btnNuevoTab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
+
+        btnActualizarTab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
+
+        btnExcelTab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/excel.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 560, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(labelDescripcionTab4)
+                                .addComponent(labelCodigoTab4))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtCodigoTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDescripcionTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(labelCantidadTab4)
+                                .addComponent(labelPrecioTab4)
+                                .addComponent(labelProveedorTab4))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtPrecioTab4, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                                .addComponent(txtCantidadTab4, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                                .addComponent(comboboxProveedorTab4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnNuevoTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnGuardarTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnExcelTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnEliminarTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnActualizarTab4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelCodigoTab4)
+                            .addComponent(txtCodigoTab4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelDescripcionTab4)
+                            .addComponent(txtDescripcionTab4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelCantidadTab4)
+                            .addComponent(txtCantidadTab4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelPrecioTab4)
+                            .addComponent(txtPrecioTab4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelProveedorTab4)
+                            .addComponent(comboboxProveedorTab4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnGuardarTab4)
+                                    .addComponent(btnEliminarTab4))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnNuevoTab4)
+                                    .addComponent(btnActualizarTab4)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(btnExcelTab4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab4", jPanel4);
+
+        tabla5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "CLIENTE", "VENDEDOR", "TOTAL"
+            }
+        ));
+        jScrollPane5.setViewportView(tabla5);
+        if (tabla5.getColumnModel().getColumnCount() > 0) {
+            tabla5.getColumnModel().getColumn(0).setPreferredWidth(20);
+            tabla5.getColumnModel().getColumn(1).setPreferredWidth(60);
+            tabla5.getColumnModel().getColumn(2).setPreferredWidth(60);
+            tabla5.getColumnModel().getColumn(3).setPreferredWidth(60);
+        }
+
+        btnPdfTab5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pdf.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 560, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 554, Short.MAX_VALUE)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(btnPdfTab5)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(btnPdfTab5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab5", jPanel5);
+
+        labelRucTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelRucTab6.setText("RUC:");
+
+        labelNombreTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelNombreTab6.setText("NOMBRE:");
+
+        labelTelefonoTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelTelefonoTab6.setText("TELÉFONO:");
+
+        labelDireccionTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelDireccionTab6.setText("DIRECCIÓN:");
+
+        labelRazonTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        labelRazonTab6.setText("RAZON SOCIAL:");
+
+        txtRucTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        txtRucTab6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRucTab6ActionPerformed(evt);
+            }
+        });
+
+        txtNombreTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        txtTelefonoTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        txtTelefonoTab6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoTab6ActionPerformed(evt);
+            }
+        });
+
+        txtDireccionTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        txtDireccionTab6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDireccionTab6ActionPerformed(evt);
+            }
+        });
+
+        txtRazonTab6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+
+        labelNombreTab7.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 14)); // NOI18N
+        labelNombreTab7.setText("DATOS DE LA EMPRESA");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 560, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelRucTab6)
+                            .addComponent(txtRucTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelTelefonoTab6)
+                            .addComponent(txtTelefonoTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(58, 58, 58))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtDireccionTab6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelDireccionTab6))
+                        .addGap(50, 50, 50)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(labelNombreTab6)
+                            .addComponent(labelRazonTab6)
+                            .addComponent(txtNombreTab6, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+                            .addComponent(txtRazonTab6))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(204, Short.MAX_VALUE)
+                .addComponent(labelNombreTab7)
+                .addGap(204, 204, 204))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(labelNombreTab7)
+                .addGap(29, 29, 29)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelRucTab6)
+                    .addComponent(labelNombreTab6)
+                    .addComponent(labelTelefonoTab6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtRucTab6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombreTab6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTelefonoTab6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(labelRazonTab6))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(labelDireccionTab6)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtRazonTab6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDireccionTab6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(191, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab6", jPanel6);
@@ -465,6 +956,34 @@ public class Sistema extends javax.swing.JFrame {
     private void txtTelefonoTab2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoTab2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefonoTab2ActionPerformed
+
+    private void txtPrecioTab1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioTab1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioTab1ActionPerformed
+
+    private void txtTelefonoTab3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoTab3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelefonoTab3ActionPerformed
+
+    private void txtCantidadTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCantidadTab4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCantidadTab4ActionPerformed
+
+    private void comboboxProveedorTab4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboboxProveedorTab4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboboxProveedorTab4ActionPerformed
+
+    private void txtTelefonoTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoTab6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelefonoTab6ActionPerformed
+
+    private void txtRucTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRucTab6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRucTab6ActionPerformed
+
+    private void txtDireccionTab6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionTab6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDireccionTab6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -502,13 +1021,28 @@ public class Sistema extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActualizarTab2;
+    private javax.swing.JButton btnActualizarTab3;
+    private javax.swing.JButton btnActualizarTab4;
     private javax.swing.JButton btnClientes1;
     private javax.swing.JButton btnConfig1;
+    private javax.swing.JButton btnEliminarTab2;
+    private javax.swing.JButton btnEliminarTab3;
+    private javax.swing.JButton btnEliminarTab4;
+    private javax.swing.JButton btnExcelTab4;
+    private javax.swing.JButton btnGuardarTab2;
+    private javax.swing.JButton btnGuardarTab3;
+    private javax.swing.JButton btnGuardarTab4;
     private javax.swing.JButton btnImpresionTab1;
     private javax.swing.JButton btnNuevaVenta;
+    private javax.swing.JButton btnNuevoTab2;
+    private javax.swing.JButton btnNuevoTab3;
+    private javax.swing.JButton btnNuevoTab4;
+    private javax.swing.JButton btnPdfTab5;
     private javax.swing.JButton btnProductos1;
     private javax.swing.JButton btnProveedores1;
     private javax.swing.JButton btnVentas1;
+    private javax.swing.JComboBox<String> comboboxProveedorTab4;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -523,8 +1057,16 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel labelCantidadTab4;
+    private javax.swing.JLabel labelCodigoTab4;
+    private javax.swing.JLabel labelDescripcionTab4;
+    private javax.swing.JLabel labelDireccionTab3;
+    private javax.swing.JLabel labelDireccionTab6;
     private javax.swing.JLabel labelDniTab1;
     private javax.swing.JLabel labelDniTab2;
     private javax.swing.JLabel labelDniTab3;
@@ -532,21 +1074,51 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel labelDniTab5;
     private javax.swing.JLabel labelDniTab6;
     private javax.swing.JLabel labelNombreTab1;
+    private javax.swing.JLabel labelNombreTab3;
+    private javax.swing.JLabel labelNombreTab6;
+    private javax.swing.JLabel labelNombreTab7;
+    private javax.swing.JLabel labelPrecioTab4;
+    private javax.swing.JLabel labelProveedorTab4;
+    private javax.swing.JLabel labelRazonTab3;
+    private javax.swing.JLabel labelRazonTab6;
+    private javax.swing.JLabel labelRucTab3;
+    private javax.swing.JLabel labelRucTab6;
+    private javax.swing.JLabel labelTelefonoTab3;
+    private javax.swing.JLabel labelTelefonoTab6;
     private javax.swing.JLabel labelTotalTab1;
     private javax.swing.JLabel labelValorTotalTab1;
     private javax.swing.JPanel panelOpciones;
     private javax.swing.JPanel panelSuperior;
+    private javax.swing.JTable tabla1;
+    private javax.swing.JTable tabla2;
+    private javax.swing.JTable tabla3;
+    private javax.swing.JTable tabla4;
+    private javax.swing.JTable tabla5;
     private javax.swing.JTextField txtCantidadTab1;
+    private javax.swing.JTextField txtCantidadTab4;
     private javax.swing.JTextField txtCodigoTab1;
+    private javax.swing.JTextField txtCodigoTab4;
     private javax.swing.JTextField txtDescripcionTab1;
+    private javax.swing.JTextField txtDescripcionTab4;
     private javax.swing.JTextField txtDireccionTab2;
+    private javax.swing.JTextField txtDireccionTab3;
+    private javax.swing.JTextField txtDireccionTab6;
     private javax.swing.JTextField txtDniTab1;
     private javax.swing.JTextField txtDniTab2;
     private javax.swing.JTextField txtNombreTab1;
     private javax.swing.JTextField txtNombreTab2;
+    private javax.swing.JTextField txtNombreTab3;
+    private javax.swing.JTextField txtNombreTab6;
     private javax.swing.JTextField txtPrecioTab1;
+    private javax.swing.JTextField txtPrecioTab4;
     private javax.swing.JTextField txtRazonTab2;
+    private javax.swing.JTextField txtRazonTab3;
+    private javax.swing.JTextField txtRazonTab6;
+    private javax.swing.JTextField txtRucTab3;
+    private javax.swing.JTextField txtRucTab6;
     private javax.swing.JTextField txtStockTab1;
     private javax.swing.JTextField txtTelefonoTab2;
+    private javax.swing.JTextField txtTelefonoTab3;
+    private javax.swing.JTextField txtTelefonoTab6;
     // End of variables declaration//GEN-END:variables
 }
